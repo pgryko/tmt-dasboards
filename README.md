@@ -17,6 +17,12 @@ Built with Flask JWT Backend and a React/Redux Front-End with Material UI.
 
 ![screenshot](http://i.imgur.com/ZIS4qkw.png)
 
+### Setup python environment
+'''sh
+$ virtualenv venv -p python3
+$ source venv/bin/activate
+'''
+
 ### Create DB
 #### For postgres (my prefered db)
 ```sh
@@ -37,6 +43,7 @@ or
 
 $ export DATABASE_URL="sqlite:///your.db"
 
+$ python manage.py db init
 $ python manage.py create_db
 $ python manage.py db upgrade
 $ python manage.py db migrate
