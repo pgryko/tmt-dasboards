@@ -17,6 +17,14 @@ Boilerplate application for a Flask JWT Backend and a React/Redux Front-End with
 ![screenshot](http://i.imgur.com/ZIS4qkw.png)
 
 ### Create DB
+#### For postgres (my prefered db)
+```sh
+$ createdb yourdb
+$ export DATABASE_URL="postgresql:///yourdb"
+'''
+
+or
+
 ```sh
 $ export DATABASE_URL="postgresql://localhost/yourdb"
 
