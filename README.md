@@ -1,6 +1,7 @@
-# React-Redux-Flask #
+# TMT project dashboard and reprot #
 
-Boilerplate application for a Flask JWT Backend and a React/Redux Front-End with Material UI.
+Dashboard and report generation for a production line, built using Flask/ReactJS.
+Built with Flask JWT Backend and a React/Redux Front-End with Material UI.
 
 * Python 2.7+ or 3.x
 * Pytest
