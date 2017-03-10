@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import * as actionCreators from '../actions/auth';
 import DatePicker from 'material-ui/DatePicker';
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
-
+import Receiving from './Performance/Receiving';
 
 function mapStateToProps(state) {
     return {
@@ -54,37 +54,7 @@ class Analytics extends React.Component { // eslint-disable-line react/prefer-st
                   </div>
             </div>
             <div className="col-md-8">
-            <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHeaderColumn>ID</TableHeaderColumn>
-                <TableHeaderColumn>Name</TableHeaderColumn>
-                <TableHeaderColumn>Status</TableHeaderColumn>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              <TableRow>
-                <TableRowColumn>1</TableRowColumn>
-                <TableRowColumn>John Smith</TableRowColumn>
-                <TableRowColumn>Employed</TableRowColumn>
-              </TableRow>
-              <TableRow>
-                <TableRowColumn>2</TableRowColumn>
-                <TableRowColumn>Randal White</TableRowColumn>
-                <TableRowColumn>Unemployed</TableRowColumn>
-              </TableRow>
-              <TableRow>
-                <TableRowColumn>3</TableRowColumn>
-                <TableRowColumn>Stephanie Sanders</TableRowColumn>
-                <TableRowColumn>Employed</TableRowColumn>
-              </TableRow>
-              <TableRow>
-                <TableRowColumn>4</TableRowColumn>
-                <TableRowColumn>Steve Brown</TableRowColumn>
-                <TableRowColumn>Employed</TableRowColumn>
-              </TableRow>
-            </TableBody>
-          </Table>
+            <Receiving/>
             </div>
             </div>
         );
