@@ -41,19 +41,23 @@ class Analytics extends React.Component { // eslint-disable-line react/prefer-st
         return (
             <div>
             <div>
-            <div className="col-md-8">
+            <div>
                 <h1>Analytics</h1>
-                <hr />
-            </div>
-                              <div>
+                <div 
+                style={{
+                  position: 'right' 
+                }}
+                >
                     <DatePicker 
                      onChange={this.handleChangecurDate}
-                    floatingLabelText="Date"
+                    floatingLabelText="Select Date"
                     defaultDate={this.state.curDate}
                     mode="landscape" />
                   </div>
+                <hr />
             </div>
-            <div className="col-md-8">
+            </div>
+            <div >
             <Receiving/>
             </div>
             </div>

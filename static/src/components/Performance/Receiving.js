@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actionCreators from '../../actions/auth';
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
-
+import TextField from 'material-ui/TextField';
 /* Table describing item recieving performance */
 
 function mapStateToProps(state) {
@@ -33,7 +33,7 @@ class Receiving extends React.Component { // eslint-disable-line react/prefer-st
             >
             <TableHeader
             displaySelectAll={false}
-            adjustForCheckbox={true}
+            adjustForCheckbox={false}
             enableSelectAll={false}
             >
               <TableRow>
@@ -46,12 +46,12 @@ class Receiving extends React.Component { // eslint-disable-line react/prefer-st
                 <TableHeaderColumn>Change +/- <br/> Hour</TableHeaderColumn>
                 <TableHeaderColumn><br/>Cumul</TableHeaderColumn>
                 <TableHeaderColumn> <br/>%</TableHeaderColumn>
-                <TableHeaderColumn>MDI +/-</TableHeaderColumn>
+                <TableHeaderColumn>MDI </TableHeaderColumn>
                 <TableHeaderColumn>Remarks</TableHeaderColumn>
               </TableRow>
             </TableHeader>
             <TableBody
-            displayRowCheckbox={true}
+            displayRowCheckbox={false}
             >
               <TableRow>
                 <TableRowColumn>6-7</TableRowColumn>
@@ -63,8 +63,8 @@ class Receiving extends React.Component { // eslint-disable-line react/prefer-st
                 <TableRowColumn>-13</TableRowColumn>
                 <TableRowColumn>-13</TableRowColumn>
                 <TableRowColumn>-2%</TableRowColumn>
-                <TableRowColumn/>
-                <TableRowColumn/>
+                <TableRowColumn><TextField/> </TableRowColumn>
+                <TableRowColumn><TextField/> </TableRowColumn>
               </TableRow>
               <TableRow>
                 <TableRowColumn>7-8</TableRowColumn>
@@ -76,8 +76,8 @@ class Receiving extends React.Component { // eslint-disable-line react/prefer-st
                 <TableRowColumn>-13</TableRowColumn>
                 <TableRowColumn>-13</TableRowColumn>
                 <TableRowColumn>-2%</TableRowColumn>
-                <TableRowColumn/>
-                <TableRowColumn/>
+                <TableRowColumn><TextField/> </TableRowColumn>
+                <TableRowColumn><TextField/> </TableRowColumn>
               </TableRow>
               <TableRow>
                 <TableRowColumn>8-9</TableRowColumn>
@@ -89,8 +89,8 @@ class Receiving extends React.Component { // eslint-disable-line react/prefer-st
                 <TableRowColumn>-13</TableRowColumn>
                 <TableRowColumn>-13</TableRowColumn>
                 <TableRowColumn>-2%</TableRowColumn>
-                <TableRowColumn/>
-                <TableRowColumn/>
+                <TableRowColumn><TextField/> </TableRowColumn>
+                <TableRowColumn><TextField/> </TableRowColumn>
               </TableRow>
               <TableRow>
                 <TableRowColumn>9-10</TableRowColumn>
@@ -102,8 +102,8 @@ class Receiving extends React.Component { // eslint-disable-line react/prefer-st
                 <TableRowColumn>-13</TableRowColumn>
                 <TableRowColumn>-13</TableRowColumn>
                 <TableRowColumn>-2%</TableRowColumn>
-                <TableRowColumn/>
-                <TableRowColumn/>
+                <TableRowColumn><TextField/> </TableRowColumn>
+                <TableRowColumn><TextField/> </TableRowColumn>
               </TableRow>
             </TableBody>
           </Table>
