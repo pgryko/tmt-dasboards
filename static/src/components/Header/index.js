@@ -78,6 +78,9 @@ export class Header extends Component {
                             </div>
                             :
                             <div>
+                                <MenuItem onClick={() => this.dispatchNewRoute('/')}>
+                                    Home
+                                </MenuItem>
                                 <MenuItem onClick={() => this.dispatchNewRoute('/analytics')}>
                                     Analytics
                                 </MenuItem>
@@ -90,11 +93,8 @@ export class Header extends Component {
                     }
                 </LeftNav>
                 <AppBar
-                  title="React-Redux-Flask"
+                  title="TMT Project Dashboard"
                   onLeftIconButtonTouchTap={() => this.openNav()}
-                  iconElementRight={
-                      <FlatButton label="Home" onClick={() => this.dispatchNewRoute('/')} />
-                    }
                 />
             </header>
 
