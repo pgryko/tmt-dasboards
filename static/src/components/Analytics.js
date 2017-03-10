@@ -5,6 +5,8 @@ import * as actionCreators from '../actions/auth';
 import DatePicker from 'material-ui/DatePicker';
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
 import Receiving from './Performance/Receiving';
+import MixedDataExample from './Performance/MixedChart';
+
 
 function mapStateToProps(state) {
     return {
@@ -58,6 +60,8 @@ class Analytics extends React.Component { // eslint-disable-line react/prefer-st
             </div>
             </div>
             <div >
+            <MixedDataExample
+            />
             <Receiving/>
             </div>
             </div>
