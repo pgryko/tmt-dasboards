@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import * as actionCreators from '../actions/auth';
 import DatePicker from 'material-ui/DatePicker';
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
+import {Tabs, Tab} from 'material-ui/Tabs';
 import Receiving from './Performance/Receiving';
 import MixedDataExample from './Performance/MixedChart';
 
@@ -45,24 +46,30 @@ class Analytics extends React.Component { // eslint-disable-line react/prefer-st
             <div>
             <div>
                 <h1>Analytics</h1>
-                <div 
+                <div
                 style={{
-                  position: 'right' 
+                  position: 'right'
                 }}
                 >
-                    <DatePicker 
+                    <DatePicker
                      onChange={this.handleChangecurDate}
                     floatingLabelText="Select Date"
                     defaultDate={this.state.curDate}
                     mode="landscape" />
                   </div>
-                <hr />
             </div>
             </div>
             <div >
-            <MixedDataExample
-            />
-            <Receiving/>
+              <Tabs>
+                <Tab label="Show Table">
+                  <br/>
+                  <Receiving/>
+                </Tab>
+                <Tab label="Show Chart">
+                  <br/>
+                  <MixedDataExample/>
+                </Tab>
+              </Tabs>
             </div>
             </div>
         );
